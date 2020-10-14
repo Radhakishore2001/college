@@ -1,0 +1,255 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+
+
+/*header styles*/
+h1{
+    font-size: 50px;
+    color: whitesmoke;
+}
+h2{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+.front h3{
+  padding: 10px;
+  width: 65%;
+  text-align: center;
+  font-size: 20px;
+  color: wheat;
+
+}
+p{
+    text-align: left;
+    padding: 10%;
+    padding-top: 0;
+}
+
+/* Navigation bar and first page */
+nav{
+  position: fixed;
+  background: #0009;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  width: 50%;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: salmon;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.back{
+  background-image: url("img/0.jpg");
+  background-size: cover;
+  background-position: right center;
+  width: 100%;
+  height: 100vh;
+}
+
+.front{
+  padding:50px;
+  background: #0009;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* Body */
+
+body{
+  margin: 0;
+  padding: 0.5;
+  background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+}
+
+.space{
+  padding-top: 90px;
+}
+ 
+img{
+    margin-left: 0.3rem;
+    margin-top: 10%;
+}
+
+ section{
+    
+    background-image: url(img/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-color: white;
+}
+.box{
+    padding-top: 50px;
+    background: rgba(255,255,255,0.5);
+    box-shadow:0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.row{
+  height: 120vh;
+  width: auto;
+}
+.lastrow{
+  height: auto;
+  width: 100%;
+}
+.courses{
+   border-radius: 25px;
+    float:left;
+    margin: 30px;
+    padding: 10px;
+    width: 20%;
+    box-shadow:0 4px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+ 
+  button{
+    background-color: lightsalmon;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    font-size: small;
+    color: mintcream;
+    align-items: center;
+}
+
+
+/* Responsivness */
+@media (max-width: 1200px){
+  label.logo{
+    font-size: 25px;
+    padding-left: 0 30px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+  }
+
+  nav ul li a{
+    font-size: 14px;
+    padding: 5px 11px;
+  }
+}
+
+  
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 20px;
+      padding-left: 0 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+    }
+
+    nav ul li a{
+      font-size: 12px;
+      padding: 3px 10px;
+    }
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    label.logo{
+        font-size: 25px;
+        padding: 0 10px;
+        letter-spacing: 1px;
+    }
+    ul{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      background: grey;
+      top: 80px;
+      left:-100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav{
+      position: absolute;
+    }
+    .front{
+      padding-top: 100px;
+      align-content: center;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 20px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: salmon;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .courses{
+      width: 40%;
+      margin: 8px;
+      margin-left: 25px;
+    }
+    .row{
+      height: 100vh;
+    }
+    h3{
+      font-size: 12px;
+    }
+
+  }
+   
+
